@@ -1,0 +1,226 @@
+
+    *{
+        margin: 0; padding: 0;
+        box-sizing: border-box;
+    }
+    a{text-decoration: none; color: inherit;}
+/*---------------------------logo---------------------------*/
+    body{
+        position: relative;
+        
+    }
+    .wrap_index{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .logo{
+        width: 25%;
+        position: absolute;
+        margin-top: 30%;
+        z-index: 999;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        z-index: 99;
+    }
+    .ci_wrap{
+        position: relative;
+        width: 56px;
+        height: 30px;
+        display: flex;
+        margin-left: 50%;
+        margin-bottom: 15%;
+        transform: translateX(-50%);
+    }
+    .ci_wrap .ci_right{
+        width: 26px;
+        height: 30px;
+        position: absolute;
+        right: 0px;
+        top: 0;
+    }
+    .ci_wrap .ci_left{
+        width: 38px;
+        height: 43px;
+        position: absolute;
+        left: 0px;
+        top: 0;
+    }
+    .logo_img{
+        width: 100%;
+    }
+
+/*---------------------------login_page---------------------------*/
+.login_wrap{
+    position: absolute;
+    width: 52.777%;
+    height: auto;
+    text-align: center; 
+    margin-top: 60%;
+    margin-left: 50%;
+    transform: translateX(-50%);   
+    
+}
+.login_wrap .login_txt_wrap{
+    width: 100%;
+    
+    
+}
+.login_wrap .login_txt_wrap>div{
+    display: flex;
+    border-bottom: 1px solid #fff;
+    font-size: 14px;
+    margin-top: 2%;
+    padding: 4% 4% 4% 0;
+    color: #fff;
+    text-align: left;
+
+}
+.login_wrap .login_txt_wrap div span{
+    margin-left: 2%;
+}
+.login_btn_wrap{
+    margin-top: 5%;
+}
+.login_btn_wrap>div{
+    padding: 4.5%;
+    font-size: 13px;
+    font-weight: 900;
+    margin-top: 3%;
+    border-radius: 500px;
+}
+.login_btn_wrap .login_btn{
+    color: #fff;
+    background-color: #F9363B;
+}
+.login_btn_wrap .login_btn02{
+    background-color: #fff;
+}
+
+.log_find{
+    font-size: 10px;
+    padding: 4%;
+    font-weight: 300;
+    color: #ddd;
+}
+
+
+/*---------------------------sns_wrap---------------------------*/
+.sns_wrap{
+    position: absolute;
+    width: 38.888%;
+    height: auto;
+    text-align: center; 
+    margin-top: 130%;
+    margin-left: 50%;
+    transform: translateX(-50%);  
+    color: #ddd;
+    font-size: 15px;
+    z-index: 99;
+}
+.sns_wrap .sns_icon_wrap{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+/*---------------------------bg---------------------------*/
+    .video_wrap {
+    position: relative;
+    padding-top: 177.777%;
+    width: 100%;
+    height: 0;
+    
+    overflow: hidden;
+}
+
+
+    .video_wrap > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    animation: move linear 3s;
+    animation-fill-mode : forwards;
+    
+} 
+.outer_ci_wrap{
+    position: absolute;
+    margin-top: 70%;
+    width: 100%;
+}
+.sp_ci_wrap{
+    width: 56px;
+    height: 30px;
+    margin: 0 auto;
+    animation: sp linear 3s;
+    animation-fill-mode : forwards;
+}
+.sp_ci_wrap .sp_ci_left{
+    width: 38px;
+    height: 43px;
+    
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+.sp_ci_wrap .sp_ci_right{
+    width: 26px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+@keyframes sp{
+    0%{transform: scale(1.2);}
+    70%{opacity: 1;}
+    90%{transform: scale(1); }
+    100%{transform: scale(1); opacity: 0;}
+}
+@keyframes spmove{
+    0%{transform: scale(1.1);}
+    100%{transform: scale(1);}
+}
+
+.bg_img_wrap{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    z-index: -999;
+    animation: move linear 4s;
+    animation-fill-mode : forwards;
+    position: absolute;
+    top: 0;
+    left: 0;
+    }
+
+
+@keyframes move {
+    0% {transform: scale(1);}
+    40%{filter: blur(0);}
+    46%{filter: grayscale(0);}
+    
+    60%{filter: blur(1) brightness(90%) ;}
+        
+    80%{filter: grayscale(1) brightness(40%); transform: scale(1.1);}
+    100%{filter: grayscale(1) brightness(40%); transform: scale(1.1);}
+}
+.wrap_index{
+    animation: scale linear 4s;
+    animation-fill-mode : forwards;
+}
+@keyframes scale {
+    0% {filter: opacity(0)}
+    
+    90%{filter: opacity(0);}
+        
+    100%{filter: opacity(1)}
+}
+
+ 
+

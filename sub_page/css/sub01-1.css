@@ -1,0 +1,161 @@
+
+body{
+   overflow-x: hidden;
+}
+
+.wrap_sub01{
+    width:100%;
+    height: auto;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    overflow-y: none;
+   
+}
+.place_wrap_01{
+    width: 200%;
+    height: 155px;
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-12%);
+    
+}
+.place{
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.place .on{
+    background-color: #67D4C6;
+}
+.place a{
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #ccc;
+}
+.place a h5{
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.place a img{
+   width: 100%;
+   display: block;
+}
+.rectangle{
+    padding: 10px;
+    box-sizing:border-box;
+}
+.rectangle img{
+    width: 140%;
+}
+/*------------------ bar ------------------*/
+
+.bar{
+    width: auto;
+    height: 55px;
+    z-index: -999;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 10px 8px 40px #ccc;
+    margin: 10px 10px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.bar strong{
+    font-size: 13px;
+}
+.bar h5{
+    color: #333;
+}
+.count_people_wrap{
+    display: flex;
+}
+.strat_date{
+    height: 100%;
+    padding: 10px;
+    border-radius: 40px;
+    display: block;
+    flex: 2;
+    background-color: #C7E8E4;
+    margin-right: 10px;
+}
+.end_date{
+    height: 100%;
+    padding: 10px;
+    border-radius: 40px;
+    display: block;
+    flex: 2;
+    /* background-color: #67D4C6; */
+    
+}
+
+/*------------------ canlendar ------------------*/
+
+.canlendar{
+    margin-top: 20px;;
+    height: auto;
+    width:100%;
+    overflow-x:scroll;
+    -ms-overflow-style: none;
+    box-shadow: 10px 8px 40px #ccc;
+}
+.inner_canlendar{
+    width: 130%;
+    border-collapse: collapse;
+    border-radius: 20px;
+    box-shadow: 10px 8px 40px #ccc;
+    padding:20px 0px 20px 10px;
+    margin-left: 10px ;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.canlendar_wrap{
+    display: flex;
+    align-items: center;
+    
+}
+.canlendar h5{
+    padding: 10px 0;
+   text-align:center;
+}
+table {
+    width:90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 20px;
+}
+.arrow_canlendar{
+    height: 33px;
+}
+thead{
+    height: 50px;
+}
+td {
+    /*border: 1px solid gray;box-sizing:border-box;*/
+    width: 50px; height:40px;
+    text-align:center;
+    font-size: 12px;
+}
+
+.tr_date{
+    
+    border-radius: 40px;
+    display: block;
+    
+    background-color:#F0F0F0;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.tr_date p{
+    color: #666;
+}
+
